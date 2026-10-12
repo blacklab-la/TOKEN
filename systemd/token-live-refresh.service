@@ -1,0 +1,7 @@
+[Unit]
+Description=Silent token-usage refresh for the live Token page
+
+[Service]
+Type=oneshot
+Environment=HOME=/home/hatch
+ExecStart=/usr/bin/python3 /home/hatch/workspace/token-live-setup/refresh_token_live.py
